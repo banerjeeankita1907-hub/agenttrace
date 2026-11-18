@@ -1,0 +1,16 @@
+{
+  "name": "agenttrace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline JSONL evaluator for tool-using AI agent traces.",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/agenttrace/core.js && node --check src/agenttrace/cli.js",
+    "sample": "node src/agenttrace/cli.js fixtures/sample-traces.jsonl --pretty"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
